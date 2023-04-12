@@ -5,6 +5,7 @@
 }
 img {
   height: 10vmin;
+  mix-blend-mode: multiply;
 }
 .flex {
   display: flex;
@@ -13,11 +14,11 @@ img {
 }
 body {
   height: 100vh;
-  background: #f6f5fb;
+  background: #ecf4f3;
 }
 .container {
-  background: #fff;
-  height: 50vh;
+  background: #f5eded;
+  height: 60vh;
   width: 50vw;
   box-shadow: 0px 0px 15px 0.5px rgba(0, 0, 0, 0.1);
 }
