@@ -1,0 +1,99 @@
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  height: 10vmin;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  background: #f6f5fb;
+}
+.container {
+  background: #fff;
+  height: 50vh;
+  width: 50vw;
+  box-shadow: 0px 0px 15px 0.5px rgba(0, 0, 0, 0.1);
+}
+.display {
+  justify-content: space-around;
+  height: 40%;
+}
+.start .user #user_choice {
+  animation: usershake 0.7s ease infinite;
+}
+@keyframes usershake {
+  50% {
+    transform: rotate(110deg);
+  }
+}
+.start .cpu #cpu_choice {
+  animation: cpushake 0.7s ease infinite;
+}
+@keyframes cpushake {
+  50% {
+    transform: rotate(-110deg) rotateY(180deg);
+  }
+}
+#user_score{
+  color: #adff2f;
+}
+#cpu_score{
+  color: #ff0000;
+}
+.user,
+.cpu {
+  text-align: center;
+}
+#user_choice {
+  transform: rotate(90deg);
+}
+#cpu_choice {
+  transform: rotate(-90deg) rotateY(180deg);
+}
+.container > h1 {
+  margin-top: 2vmin;
+  text-align: center;
+  font-size: 4vmin;
+  color: #ffa500;
+
+}
+.container .options {
+  margin-top: 8vmin;
+  gap: 6vmin;
+}
+.option {
+  height: 12vmin;
+  width: 9vmin;
+  text-align: center;
+}
+.option > img ,.fa-regular {
+  opacity: 0.5;
+  cursor: pointer;
+  height: 8vmin;
+}
+.option > .option_img:hover {
+  height: 8.7vmin;
+  opacity: 1;
+}
+.fa-regular{
+    font-size: 8vmin;
+}
+.fa-regular:hover{
+    font-size: 8.7vmin;
+} 
+#user_score:hover, #cpu_score:hover {
+  color: #ffcc00;
+}
+@media (max-width:850px){
+  .container{
+    transform: rotate(90deg);
+    width: 90vh;
+  }
+}

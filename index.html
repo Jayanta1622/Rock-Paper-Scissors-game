@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors game</title>
+  </head>
+  <body class="flex">
+    <div class="container">
+      <div class="display flex">
+        <div class="user">
+          <img src="./img/rock.jpg" alt="" id="user_choice" />
+          <h1 id="user_score">0</h1>
+        </div>
+        <div class="cpu">
+          <img src="./img/rock.jpg" alt="" id="cpu_choice" />
+          <h1 id="cpu_score">0</h1>
+        </div>
+      </div>
+      <h1 id="result">Result</h1>
+      <div class="options flex">
+        <div class="option">
+          <img src="./img/rock.jpg" alt="" class="option_img" />
+          <p>Rock</p>
+        </div>
+        <div class="option">
+          <img src="./img/paper.jpg" alt="" class="option_img" />
+          <p>paper</p>
+        </div>
+        <div class="option">
+          <img src="./img/scissors.jpg" alt="" class="option_img" />
+          <p>Scissors</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
