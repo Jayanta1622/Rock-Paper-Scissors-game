@@ -9,7 +9,7 @@ const display = document.querySelector(".display");
 let userCurrentScore=Number(userScore.innerText)
 let cpuCurrentScore=Number(cpuScore.innerText)
 
-result.innerText = "Start";
+result.innerText = "Select your choice";
 result.style.color="orange";
 
 options.forEach((option, index) => {
